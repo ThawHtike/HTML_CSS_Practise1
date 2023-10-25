@@ -1,0 +1,965 @@
+<!doctype>
+<html>
+
+<head>
+
+<title>Thaw Zin Htike Practice</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<script src='min.js' crossorigin='anonymous'></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+
+*{box-sizing:border-box}
+
+.col-25{
+width:25%;
+float:left;
+padding:8px;
+top:0px;
+margin-left:0px;
+position:fixed
+}
+
+.col-25 img{
+width:100px;
+height:100px
+}
+
+.developed{
+color:gray
+}
+
+a{
+text-decoration:none;
+padding:8px;
+display:block;
+color:black
+}
+
+.portfolio{
+color:green
+}
+
+a:hover{
+background-color:darkgray;
+text-decoration:none;
+color:black
+}
+
+.col-75{
+width:75%;
+background-color:#f1f1f1;
+float:left;
+margin-left:25%;
+top:0px
+}
+
+span{
+margin-right:15px
+}
+
+button{
+padding:8px 15px
+}
+
+.all{
+background-color:black;
+color:white;
+border:black
+}
+
+button:hover{
+background-color:darkgray;
+color:black;
+border:none
+}
+
+button{
+border:none;
+background-color:white
+}
+
+.img1 img{
+width:100%;
+height:200px;
+}
+
+.img1{
+width:30%;
+float:left;
+margin:1.66%;
+background-color:white;
+border-radius:7px;
+}
+
+#filter{
+border-bottom:5px solid darkgray;
+padding:10px
+}
+
+.img1 p,h3{
+padding:0px 5px
+}
+
+
+
+.pagenumber a{
+float:left;
+text-decoration:none;
+padding:10px;
+background-color:#f1f1f1;
+
+}
+
+.pagenumber{
+width:100%;
+height:35px;
+margin-left:40%;
+overflow:hidden
+}
+
+.img2{
+width:100%;
+margin:5px
+}
+
+.img2 img{
+width:50%;
+float:left;
+padding:12px;
+height:250px;
+}
+
+
+#me{
+padding:15px
+}
+
+.th{
+margin:5px;
+padding:12px
+}
+
+.rate1{
+background-color:darkgray;
+width:100%
+}
+
+.rate2{
+background-color:gray;
+padding:12px;
+text-align:center;
+color:white
+}
+
+.dr{
+margin:5px;
+padding:12px
+}
+
+.dr button{
+background-color:gray;
+padding:15px;
+color:white;
+overflow:hidden
+}
+
+.dr button:hover{
+background-color:darkgray
+}
+
+.hm1{
+width:100%;
+overflow:hidden
+}
+
+.hm2{
+margin-left:2.25%;
+margin-right:0px;
+margin-top:2.25%;
+margin-bottom:0px;
+padding:12px;
+float:left;
+width:30%
+}
+
+.hm3{
+margin-left:2.25%;
+margin-right:0px;
+margin-top:2.25%;
+margin-bottom:0px;
+padding:12px;
+float:left;
+width:30%
+}
+
+.list ul{
+margin:1.6%;
+padding:0px;
+width:100%
+}
+
+.list ul li{
+list-style-type:none;
+padding:15px;
+border:1px solid gray;
+text-align:center
+}
+
+.list ul li.header{
+padding:20px;
+background-color:darkgreen;
+color:white;
+}
+
+ul li button{
+width:50%;
+padding:15px 20px;
+background-color:lightgray;
+}
+
+#contact{
+width:100%;
+padding:12px;
+background-color:rgb(158, 158, 158);
+overflow::hidden
+}
+
+.text{
+background-color:rgb(158, 158, 158);
+width:100%;
+overflow:hidden;
+border-bottom:1px solid white;
+padding-bottom:15px
+}
+
+.text p{
+width:33.3%;
+float:left;
+padding:20px;
+background-color:rgb(97, 97, 97);
+color:white;
+text-align:center;
+}
+
+.text .city{
+background-color:rgb(0, 150, 136)
+}
+
+.form{
+width:100%;
+padding:12px;
+margin:5px
+}
+
+.form input{
+width:100%;
+padding:12px
+}
+
+.form1{
+margin-top:10px;
+margin-bottom:10px
+}
+
+.form2 button{
+background-color:black;
+color:white;
+width:20%;
+border:none
+}
+
+.form2 button:hover{
+background-color:#f1f1f1;
+color:black
+}
+
+
+.footer{
+width:100%;
+background-color:#616161;
+color:white;
+overflow:hidden
+}
+
+.footer .footer1{
+width:33.3%;
+float:left;
+padding:20px
+}
+
+.img5{
+width:20%
+}
+
+.img5 img{
+width:100%;
+float:left;
+height:70px;
+}
+
+
+.l{
+width:80%;
+float:left
+}
+
+
+.footer2{
+
+overflow:hidden;
+}
+
+
+.col-75 .name1{
+font-size:50px;
+background-color:#f1f1f1;
+display:none
+} 
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+.col-25{
+display:none
+}
+
+
+.col-75{
+width:100%;
+margin-left:0px
+}
+
+.col-75 .name1{
+display:block
+}
+
+
+
+
+.name1:hover .col-25 {
+display:block;
+background-color:black;
+
+}
+
+
+
+}
+
+@media screen and (max-width:600px) {
+
+.img1{
+width:100%
+}
+
+.img2{
+width:100%
+}
+
+.img2 img{
+width:100%
+}
+
+.hm1{
+width:100%
+}
+
+.hm1 .hm{
+width:100%;
+margin-right:2.25%;
+margin-left:0px
+}
+
+#contact{
+width:100%;
+}
+
+#contact .text p{
+width:100%;
+margin:0px
+}
+
+.form2 button{
+width:50%
+}
+
+.footer{
+width:100%
+}
+
+}
+
+
+.name3{
+width:100%;
+height:100px;
+background-color:black;
+color:white
+}
+
+
+.name3 p{
+text-align:center;
+padding-top:30px
+}
+
+
+.hm2 .header:hover{
+background-color:black
+}
+
+.hm3 .header1:hover{
+background-color:black
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="col-25">
+
+
+
+<img src="2.jpeg" />
+
+<h1>Portfolio</h1>
+
+<p class="developed">Developed by Thaw Zin Htike</p>
+
+<a href="#filter" class="portfolio"><i class="glyphicon glyphicon-th-large"></i>&nbsp &nbsp PORTFOLIO</a>
+
+<a href="#me"><i class="glyphicon glyphicon-user"></i>&nbsp &nbsp ABOUT</a>
+
+<a href="#contact"><i class="glyphicon glyphicon-envelope"></i>&nbsp &nbsp CONTACT</a>
+
+
+<!-- Facebook -->
+<i class="fab fa-facebook-f"></i>
+
+
+
+</div>
+
+
+<div class="col-75">
+
+<button class="name1">
+
+
+<i  class="glyphicon glyphicon-align-justify"></i>
+
+
+</button>
+
+
+<div id="filter">
+
+<h2>My Portfilio</h2>
+
+
+<span>Filter:</span>
+
+<button class="all">ALL</button>
+
+<button><i class="glyphicon glyphicon-asterisk"></i>&nbsp &nbsp DESIGN</button>
+
+<button><i class="glyphicon glyphicon-picture"></i>&nbsp &nbsp PHOTO</button>
+
+<button><i class="glyphicon glyphicon-filter"></i>&nbsp &nbsp ART</button>
+
+</div>
+
+<div class="img1">
+
+<img src="2.jpeg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+</div>
+
+<div class="img1">
+
+<img src="3.jpeg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+</div>
+
+<div class="img1">
+
+<img src="4.jpeg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. </p>
+
+
+</div>
+
+<div class="img1">
+
+<img src="5.jpeg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+</div>
+
+<div class="img1">
+
+<img src="6.jpg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+</div>
+
+<div class="img1">
+
+<img src="7.jpeg"/>
+
+<h3>aa</h3>
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+</div>
+
+
+<div class="pagenumber">
+
+
+<a href="">«</a>
+
+<a href="" class="1">1</a>
+
+<a href="">2</a>
+
+<a href="">3</a>
+
+<a href="">4</a>
+
+<a href="">»</a>
+
+</div>
+
+<div class="img2">
+
+<img src="8.jpeg" />
+
+<img src="9.jpg" />
+
+</div>
+
+<div id="me">
+
+
+<h4>About Me</h4>
+
+
+<p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+</div>
+
+<div class="th">
+
+<h5>Techinal Skills</h5>
+
+<p>Photography</p>
+
+<div class="rate1">
+
+<div class="rate2" style="width:95%">95%</div>
+
+</div>
+
+<p>Web Design</p>
+
+<div class="rate1">
+
+<div class="rate2" style="width:85%">85%</div>
+
+
+</div>
+
+<p>Photoshop</p>
+
+<div class="rate1">
+
+<div class="rate2" style="width:80%">80%</div>
+
+
+</div>
+
+
+</div>
+
+<div class="dr">
+
+<button>Download Resume</button>
+
+
+</div>
+
+<div class="hm1">
+
+<h1 style="padding-left:20px">How much I charge</h1>
+
+
+<div class="hm2">
+
+<div class="list">
+
+<ul>
+
+<li class="header">Basic</li>
+
+<li>Web Design</li>
+
+<li>Photographpy</li>
+
+<li>1GB Storage</li>
+
+<li>Mail Support</li>
+
+<li>
+
+<p>$10</p>
+
+<p>per month</p>
+
+</li>
+
+<li><button>Sign Up</button></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="hm3">
+
+
+<div class="list">
+
+<ul>
+
+<li class="header1" style="background-color:lightgreen">Pro</li>
+
+<li>Web Design</li>
+
+<li>Photographpy</li>
+
+<li>1GB Storage</li>
+
+<li>Mail Support</li>
+
+<li>
+
+<p>$25</p>
+
+<p>per month</p>
+
+</li>
+
+<li><button>Sign Up</button></li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="hm2">
+
+
+<div class="list">
+
+<ul>
+
+<li class="header">Premium</li>
+
+<li>Web Design</li>
+
+<li>Photographpy</li>
+
+<li>1GB Storage</li>
+
+<li>Mail Support</li>
+
+<li>
+
+<p>$25</p>
+
+<p>per month</p>
+
+</li>
+
+<li><button>Sign Up</button></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="contact">
+
+<h6>Contact Me</h6>
+
+<div class="text">
+
+
+<p><i class="glyphicon glyphicon-envelope"></i><br>email@email.com</p>
+
+<p class="city"><i class="glyphicon glyphicon-map-marker"></i><br>Chicago, US</p>
+
+<p><i class="glyphicon glyphicon-earphone"></i><br>512312311</p>
+
+</div>
+
+
+<div class="form">
+
+
+<form>
+
+<div class="form1">
+
+<label>Name</label>
+
+<div>
+
+<input type="text" required />
+
+
+</div>
+
+<div>
+
+<div class="form1">
+
+<label>Email</label>
+
+<div>
+
+<input type="email" required />
+
+
+</div>
+
+</div>
+
+<div class="form1">
+
+<label>Message</label>
+
+<div>
+
+<input type="text" required />
+
+
+</div>
+
+</div>
+
+
+<div class="form2">
+
+<div>
+
+<button><i class="glyphicon glyphicon-send"></i>&nbsp &nbsp Sent Message</button>
+
+
+</div>
+
+</div>
+
+
+
+</form>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<div class="footer1">
+
+
+<h6>FOOTER</h6>
+
+
+<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+<p>Powered by w3.css</p>
+
+
+
+</div>
+
+
+
+<div class="footer1">
+
+<h6>BLOG POSTS</h6>
+
+<div class="footer2">
+
+
+<div class="img5">
+
+<img src="a.jpg" />
+
+</div>
+
+
+<div class="l">
+
+<p>Lorem</p>
+
+<p>Sed mattis nunc </p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer2">
+
+
+<div class="img5">
+
+<img src="11.jpeg" />
+
+</div>
+
+
+<div class="l">
+
+<p>Lorem</p>
+
+<p>Sed mattis nunc</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer1">
+
+
+<h1>POPULAR TAGS</h1>
+
+
+<p>
+
+
+
+<button style="border:1px solid black; background-color:black; color:white; padding:3px; margin-bottom:10px">Travel</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">New York</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">London</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">IKEA</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">NORWAY</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">DIY</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">ideas</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Baby</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Family</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">News</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Clothing</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Shopping</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Sports</button>
+
+<button style="border:1px solid gray; background-color:gray; color:black; padding:3px; margin-bottom:10px">Gmaes</button>
+
+
+
+</p>
+
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="name3">
+
+
+<p>Powered by Thaw Zin Htike</p>
+
+
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>
